@@ -22,4 +22,4 @@ source ~/.bashrc
 
 #**------ Para usar Postgres:
 sudo apt-get install python-dev
-Cambio segundo commit
+Cambio 3er commit
