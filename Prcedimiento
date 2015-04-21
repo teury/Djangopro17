@@ -1,0 +1,24 @@
+#1 Instalar python-setuptools
+#2 instalar pip: sudo easy_install pip
+#3 Instalar virtualenv
+#4 Intsalar VirtualEnvWrapper 
+#########----MODIFICAR LOS SIGUIENTE----#########
+
+1st, ensure you're installing with sudo:
+
+
+2nd, append the following lines to your .bashrc file
+
+nano ~/.bashrc
+-----    
+AGREGAMOS ESTO AL ARCHIVO
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+---------
+3rd, reload your profile
+
+source ~/.bashrc
+
+
+#**------ Para usar Postgres:
+sudo apt-get install python-dev
