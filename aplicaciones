@@ -1,0 +1,38 @@
+#!/bin/bash
+
+echo Instalacion de Entorno de Desarrollo Django
+
+echo ..dentro 3 seg se inicia el script,o cierra la terminal
+
+sleep 3s
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get install postgresql  python-dev python-setuptools python-pip
+
+sudo pip install virtualenv virtualenvwrapper
+
+
+echo "
+///////////////////////////////////--Fin --///////////////////////////////////
+"
+
+echo "Recuerda Cambiar la contraseña del usuario Postgres y seguir las intrucciones del archivo Prcedimiento para agregar al Path las variables workon y mkvirtualenv
+"
+
+echo "¿Quieres instalar Sublime-text-2? s/n"
+
+read desicion
+
+if [ $desicion = s ];then
+	sudo add-apt-repository ppa:webupd8team/sublime-text-2
+
+	sudo apt-get update
+
+	sudo apt-get install sublime-text
+
+	echo "//--- Sublime Text se instalo ---//"
+fi
+
